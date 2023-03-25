@@ -1,0 +1,25 @@
+.theme-dark {
+  --color-text: var(--color-cream);
+  --color-header: var(--color-orange-light);
+
+  --color-action: var(--color-orange);
+  --color-action_hover: var(--color-orange-light);
+
+  --background-color: var(--color-dark);
+  --background-color_inverse: var(--color-dark-light);
+
+  --border-color: var(--color-orange);
+  --border-color_inverse: var(--color-orange-light);
+
+  background-color: var(--background-color_inverse);
+  border-color: var(--border-color_inverse);
+
+  .h1, .h2, .h3, h4, h5 {
+    color: var(--color-header);
+  }
+
+  .description {
+    color: var(--color-text);
+  }
+}
+

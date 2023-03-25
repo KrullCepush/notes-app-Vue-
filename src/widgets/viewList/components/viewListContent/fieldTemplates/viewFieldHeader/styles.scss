@@ -1,0 +1,21 @@
+.field-header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing);
+  }
+
+  &__label {
+    color: var(--color-text);
+    font-size: var(--text-lg);
+  }
+
+  &__delete-action {
+    padding: var(--spacing-sm);
+
+    & img {
+      width: var(--spacing-xl);
+      height: var(--spacing-xl);
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.modal-body {
+  background-color: inherit;
+  padding: var(--spacing);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  &__fieldset {
+    display: flex;
+  }
+
+  &__legend {
+    width: 30%;
+    font-size: var(--text-2xl);
+    color: var(--color-text);
+  }
+
+  &__interaction {
+    width: 70%;
+    border: 1px solid var(--border-color_inverse);
+    border-radius: 8px;
+    padding: var(--spacing-sm);
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--color-text);
+
+    &:focus {
+      background-color: var(--color-text);
+      color: var(--background-color);
+    }
+  }
+
+  &__name-field {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  &__type-field {
+    flex: 1;
+  }
+
+  &__buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    &__btn {
+      width: 45%;
+      border: 1px solid var(--border-color_inverse);
+      border-radius: 8px;
+      padding: var(--spacing-xl);
+      box-sizing: border-box;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: var(--text-2xl);
+
+      &_reject {
+        background-image: url('~@/assets/icons/add.svg');
+      }
+
+      &_apply {
+        background-image: url('~@/assets/icons/reject.svg');
+      }
+    }
+  }
+}

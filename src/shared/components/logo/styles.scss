@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__image {
+    margin-right: var(--spacing);
+  }
+
+  &__title {
+    color: var(--color-orange-light);
+    font-weight: 500;
+    font-size: var(--text-2xl);
+  }
+}

@@ -1,0 +1,12 @@
+.button-add {
+  width: 100%;
+  padding: var(--spacing);
+  border: 1px solid var(--border-color_inverse);
+  border-radius: 8px;
+  margin-bottom: var(--spacing);
+
+
+  &:hover {
+    background-color: var(--background-color_inverse);
+  }
+}

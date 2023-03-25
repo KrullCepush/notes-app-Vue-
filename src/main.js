@@ -1,8 +1,23 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import {router} from "@/app/providers";
+import {store} from '@/app/store'
+import {switchTheme} from "@/shared/utils/switchTheme";
 
-Vue.config.productionTip = false
+import App from './app/App.vue';
+
+import '@/assets/theme/dark-theme.scss';
+import '@/app/styles/styles.css';
 
 new Vue({
   render: h => h(App),
+  store,
+  router,
+  mounted() {
+    switchTheme('theme-dark');
+
+    if (!localStorage.catalogs) {
+      localStorage.setItem('catalogs', "[]");
+    }
+  }
 }).$mount('#app')
+

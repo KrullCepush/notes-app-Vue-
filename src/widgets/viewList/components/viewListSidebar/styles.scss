@@ -1,0 +1,72 @@
+.sidebar {
+  width: 30%;
+  height: 100%;
+  border: 1px solid var(--border-color_inverse);
+  border-radius: 8px;
+  padding: var(--spacing-xl);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+
+  &__empty {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text);
+  }
+
+  &__container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--spacing);
+    overflow-y: scroll;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--border-color_inverse);
+    border-radius: 8px;
+    padding: var(--spacing);
+    box-sizing: border-box;
+    margin-bottom: var(--spacing-lg);
+
+    &__title {
+      flex: 1;
+      transition: color .6s;
+
+      &_text {
+        width: 100%;
+        transition: width .6s ease;
+      }
+    }
+
+    &__delete {
+      width: var(--text-base);
+      height: var(--text-base);
+      background-image: url("~@/assets/icons/reject.svg");
+      background-repeat: no-repeat;
+      background-size: var(--text-base);
+      background-position: center;
+      display: none;
+    }
+
+    &:hover {
+      .sidebar__item__title {
+        color: var(--color-text);
+
+        &_text {
+          width: 0;
+        }
+      }
+
+      .sidebar__item__delete {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+:root {
+    /*
+    ============= colors =============
+    */
+
+    --color-dark: #1B1A17;
+    --color-dark-light: #1F1E1B;
+    --color-orange: #A35709;
+    --color-orange-light: #FF8303;
+    --color-cream: #F0E3CA;
+    --color-danger-bg: #f8d7da;
+    --color-danger-text: #721c24;
+    --color-warning-bg: #ffeeba;
+    --color-warning-text: #856404;
+    --color-succes: #28a745;
+    /*
+    ============= text sizes =============
+    */
+
+    --text-xs: .75rem;
+    --text-sm: .875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.75rem;
+    --text-4xl: 2rem;
+    --text-5xl: 2.5rem;
+    --text-6xl: 3rem;
+    --text-7xl: 4rem;
+    --text-8xl: 6rem;
+
+    /*
+    ============= spacings =============
+    */
+
+    --spacing-xs: 0.125rem;
+    --spacing-sm: 0.25rem;
+    --spacing: 0.5rem;
+    --spacing-lg: 0.75rem;
+    --spacing-xl: 1rem;
+
+    /*
+        ============= transition =============
+    */
+
+    --transition-duration: 0.3s;
+}
